@@ -85,13 +85,14 @@ LOTOGO
         Otherwise, you can specify specific domains:
     -->
 	<plugin name="cordova-plugin-whitelist" />
+	<access origin="http://*.diegobergua.com" />
+    <access origin="https://*.googleapis.com" />
+	<access origin="content:///*" />
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
 	<allow-navigation href="*://*.diegobergua.com/*" />
 	<allow-navigation href="*://*.googleapis.com/*" />
-    <access origin="http://*.diegobergua.com" />
-    <access origin="https://*.googleapis.com" />
-	<access origin="content:///*" />
+    
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
         <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
